@@ -128,7 +128,7 @@ function Model({ color = "#ffffff", textureUrl, scale = 1, y = 0 }: { color?: st
       {targetMesh && textureUrl && createPortal(
         <Decal 
           position={[0, y, zPos]} 
-          rotation={[0, 180, 180].map(v => v * (Math.PI / 180))} 
+          rotation={[0, 180, 180] 
           scale={scale} 
         >
           <meshStandardMaterial 
