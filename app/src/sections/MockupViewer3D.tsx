@@ -128,13 +128,13 @@ function Model({ color = "#ffffff", textureUrl, scale = 1, y = 0 }: { color?: st
       {targetMesh && textureUrl && createPortal(
         <Decal 
           position={[0, y, zPos]} 
+          rotation={[0, 180, -180]
+D
           rotation={[0, 180, -180] 
-          scale={scale} 
-        >
-          <meshStandardMaterial 
-            map={texture} 
-            transparent 
-            polygonOffset 
+=======
+          rotation={[0, 0, -180] 
+>>>>>>> 6253b2ae5e153f1d61c5d31332ac749ba71d9fa1
+ polygonOffset 
             polygonOffsetFactor={-2} 
           />
         </Decal>,
